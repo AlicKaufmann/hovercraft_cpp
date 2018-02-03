@@ -1,0 +1,20 @@
+#include <iostream>
+#include <casadi/casadi.hpp>
+
+using namespace std;
+using namespace casadi;
+
+int main()
+{
+	SX x = SX::sym("x",1);
+	SX y = SX::sym("y", 1);
+	SX z = SX::sym("z", 1);
+
+	SX f = x*x + 100 * z*z;
+	SX g = z + (1-x)^2 - y;
+
+	SXDict nlp = {{"x", vertcat({x,y,z})},{"f", f}, {"g", g}};
+
+	return 0;
+
+}

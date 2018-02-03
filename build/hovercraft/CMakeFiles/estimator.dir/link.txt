@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/estimator.dir/src/estimator.cpp.o  -o estimator -Wl,-rpath,/usr/local/lib -rdynamic /usr/local/lib/libcasadi.so 
