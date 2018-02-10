@@ -10,16 +10,17 @@ using namespace casadi;
 
 class Hovercraft_model
 {
+	friend class MPC;
 	public:
 		// constructor
 		Hovercraft_model();
 
-	private:
 		// transition map
 		Function f;
 
 		// measurment map
 		Function h;
+	private:
 };
 
 #endif

@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/callback.dir/src/callback.cpp.o  -o callback -Wl,-rpath,/usr/local/lib -rdynamic /usr/local/lib/libcasadi.so 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/callback.dir/src/callback.cpp.o  -o callback -Wl,-rpath,/usr/local/lib /usr/local/lib/libcasadi.so.3.4 -ldl 

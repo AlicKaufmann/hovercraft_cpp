@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/create_integrator_cost.dir/src/create_integrator_cost.cpp.o  -o create_integrator_cost -Wl,-rpath,/usr/local/lib -rdynamic /usr/local/lib/libcasadi.so ../mylibrary/libhovercraft_library.a 

@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/create_integrator_rk4.dir/src/create_integrator_rk4.cpp.o  -o create_integrator_rk4 -Wl,-rpath,/usr/local/lib -rdynamic /usr/local/lib/libcasadi.so 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/create_integrator_rk4.dir/src/create_integrator_rk4.cpp.o  -o create_integrator_rk4 -Wl,-rpath,/usr/local/lib /usr/local/lib/libcasadi.so.3.4 -ldl 

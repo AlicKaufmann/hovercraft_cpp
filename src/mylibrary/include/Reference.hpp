@@ -13,8 +13,8 @@ class Reference
 	// constructor
 	public:
 		Reference();
-	private:
 		Function ref;		
+	private:
 
 };
 #endif

@@ -13,12 +13,11 @@ class Kalman_filter
         public:
 		// constructor
                 Kalman_filter(Function fd, Function h, MX Q, MX R);
-        private:
                 MX Q;
                 MX R;
                 Function predict;
-                //Function update;
-
+                Function update;
+	private:
 };
 
 #endif

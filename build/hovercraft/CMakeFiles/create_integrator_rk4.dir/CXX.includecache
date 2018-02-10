@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -14,10 +14,6 @@ integrator.hpp
 iostream
 -
 
-/usr/local/include/casadi/casadi.hpp
-core/core.hpp
-/usr/local/include/casadi/core/core.hpp
-
 /usr/local/include/casadi/core/calculus.hpp
 iostream
 -
@@ -31,10 +27,6 @@ algorithm
 -
 casadi_common.hpp
 /usr/local/include/casadi/core/casadi_common.hpp
-
-/usr/local/include/casadi/core/callback.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
 
 /usr/local/include/casadi/core/casadi_common.hpp
 cmath
@@ -66,8 +58,6 @@ iterator
 casadi_logger.hpp
 /usr/local/include/casadi/core/casadi_logger.hpp
 
-/usr/local/include/casadi/core/casadi_export.h
-
 /usr/local/include/casadi/core/casadi_interrupt.hpp
 casadi/core/casadi_export.h
 -
@@ -94,91 +84,11 @@ fstream
 cstdarg
 -
 
-/usr/local/include/casadi/core/casadi_meta.hpp
-string
--
-casadi/core/casadi_export.h
--
-
 /usr/local/include/casadi/core/casadi_misc.hpp
 exception.hpp
 /usr/local/include/casadi/core/exception.hpp
 casadi_common.hpp
 /usr/local/include/casadi/core/casadi_common.hpp
-
-/usr/local/include/casadi/core/code_generator.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-sstream
--
-map
--
-set
--
-
-/usr/local/include/casadi/core/conic.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-
-/usr/local/include/casadi/core/core.hpp
-sx_elem.hpp
-/usr/local/include/casadi/core/sx_elem.hpp
-polynomial.hpp
-/usr/local/include/casadi/core/polynomial.hpp
-casadi_misc.hpp
-/usr/local/include/casadi/core/casadi_misc.hpp
-global_options.hpp
-/usr/local/include/casadi/core/global_options.hpp
-casadi_meta.hpp
-/usr/local/include/casadi/core/casadi_meta.hpp
-matrix.hpp
-/usr/local/include/casadi/core/matrix.hpp
-mx.hpp
-/usr/local/include/casadi/core/mx.hpp
-code_generator.hpp
-/usr/local/include/casadi/core/code_generator.hpp
-importer.hpp
-/usr/local/include/casadi/core/importer.hpp
-callback.hpp
-/usr/local/include/casadi/core/callback.hpp
-integrator.hpp
-/usr/local/include/casadi/core/integrator.hpp
-conic.hpp
-/usr/local/include/casadi/core/conic.hpp
-nlpsol.hpp
-/usr/local/include/casadi/core/nlpsol.hpp
-rootfinder.hpp
-/usr/local/include/casadi/core/rootfinder.hpp
-linsol.hpp
-/usr/local/include/casadi/core/linsol.hpp
-dple.hpp
-/usr/local/include/casadi/core/dple.hpp
-expm.hpp
-/usr/local/include/casadi/core/expm.hpp
-interpolant.hpp
-/usr/local/include/casadi/core/interpolant.hpp
-external.hpp
-/usr/local/include/casadi/core/external.hpp
-integration_tools.hpp
-/usr/local/include/casadi/core/integration_tools.hpp
-nlp_builder.hpp
-/usr/local/include/casadi/core/nlp_builder.hpp
-variable.hpp
-/usr/local/include/casadi/core/variable.hpp
-dae_builder.hpp
-/usr/local/include/casadi/core/dae_builder.hpp
-xml_file.hpp
-/usr/local/include/casadi/core/xml_file.hpp
-optistack.hpp
-/usr/local/include/casadi/core/optistack.hpp
-
-/usr/local/include/casadi/core/dae_builder.hpp
-variable.hpp
-/usr/local/include/casadi/core/variable.hpp
-
-/usr/local/include/casadi/core/dple.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
 
 /usr/local/include/casadi/core/exception.hpp
 exception
@@ -201,16 +111,6 @@ chrono
 -
 casadi/core/casadi_export.h
 -
-
-/usr/local/include/casadi/core/expm.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-
-/usr/local/include/casadi/core/external.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-importer.hpp
-/usr/local/include/casadi/core/importer.hpp
 
 /usr/local/include/casadi/core/function.hpp
 sx_elem.hpp
@@ -260,24 +160,6 @@ string
 vector
 -
 
-/usr/local/include/casadi/core/global_options.hpp
-iostream
--
-fstream
--
-casadi/core/casadi_export.h
--
-
-/usr/local/include/casadi/core/importer.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-printable.hpp
-/usr/local/include/casadi/core/printable.hpp
-
-/usr/local/include/casadi/core/integration_tools.hpp
-casadi/core/function.hpp
-/usr/local/include/casadi/core/casadi/core/function.hpp
-
 /usr/local/include/casadi/core/integrator.hpp
 function.hpp
 /usr/local/include/casadi/core/function.hpp
@@ -285,10 +167,6 @@ linsol.hpp
 /usr/local/include/casadi/core/linsol.hpp
 rootfinder.hpp
 /usr/local/include/casadi/core/rootfinder.hpp
-
-/usr/local/include/casadi/core/interpolant.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
 
 /usr/local/include/casadi/core/linsol.hpp
 function.hpp
@@ -332,25 +210,7 @@ printable.hpp
 vector
 -
 
-/usr/local/include/casadi/core/nlp_builder.hpp
-mx.hpp
-/usr/local/include/casadi/core/mx.hpp
-
-/usr/local/include/casadi/core/nlpsol.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-
 /usr/local/include/casadi/core/nonzeros.hpp
-
-/usr/local/include/casadi/core/optistack.hpp
-function.hpp
-/usr/local/include/casadi/core/function.hpp
-callback.hpp
-/usr/local/include/casadi/core/callback.hpp
-
-/usr/local/include/casadi/core/polynomial.hpp
-printable.hpp
-/usr/local/include/casadi/core/printable.hpp
 
 /usr/local/include/casadi/core/printable.hpp
 iostream
@@ -597,32 +457,4 @@ cmath
 -
 vector
 -
-
-/usr/local/include/casadi/core/variable.hpp
-iostream
--
-mx.hpp
-/usr/local/include/casadi/core/mx.hpp
-
-/usr/local/include/casadi/core/xml_file.hpp
-xml_file.hpp
-/usr/local/include/casadi/core/xml_file.hpp
-shared_object.hpp
-/usr/local/include/casadi/core/shared_object.hpp
-xml_node.hpp
-/usr/local/include/casadi/core/xml_node.hpp
-printable.hpp
-/usr/local/include/casadi/core/printable.hpp
-
-/usr/local/include/casadi/core/xml_node.hpp
-string
--
-vector
--
-map
--
-exception.hpp
-/usr/local/include/casadi/core/exception.hpp
-casadi_common.hpp
-/usr/local/include/casadi/core/casadi_common.hpp
 
